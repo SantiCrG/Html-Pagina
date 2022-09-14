@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcurt icon" href="../IMG/logo FINAL.png">
+    <link rel="stylesheet" href="../CSS/styleBootstrap.css">
+    <link rel="stylesheet" href="../CSS/STYLES.bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/STYLES.CSS">
+    <link rel="stylesheet" href="../CSS/styleVentas.css">
+    <link rel="stylesheet" href="../fuentes/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>COLOR IN</title>
+    <head>
+        <body style="background-color: rgb(32, 31, 31);">
+        <form action="../Domicilios/Actualizar2.html" class="needs-validation" novalidate>
+        <!-- 1 fila -->
+        <div class="container-fluid color8 pt-5 pb-2">
+            <div class= "titulo">
+                <p>ACTUALIZAR ENTREGA DEL DOMICILIO</p>
+            </div>
+        <div class="row justify-content-between mb-3">
+
+            <div class="col-sm-5">
+                <input type="text" class="form-control" placeholder="ID" required >
+                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+            </div>
+
+            <div class="col-sm-5">
+                 <input type="text" class="form-control" placeholder="Username" required >
+                 <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+            </div>
+
+        </div>
+
+        <!-- 2 fila -->
+        <div class="row mb-3 justify-content-between">
+            <div class="col-sm-3">
+               <select name="tipoIdentificacion" id="tipoIdentificacion" class="form-select" required>
+                   <option value="0">Seleccione el tipo de Identificación</option>
+                   <option value="1">Cédula De Ciudadanía</option>
+                   <option value="2">Cedula De Extranjero</option>
+
+               </select>
+            </div>
+            <div class="col-sm-2">
+                <input class="form-control" placeholder="Identificación" type="number" min="30000" max="6000000" required >
+                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+            </div>
+            <div class="col-sm">SELECCIONAR FECHA DE ENTREGA
+                <input type="date" class="form-control" required>
+                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+            </div>
+        </div>
+
+        <!-- 3 fila -->
+        <div class="row mb-3">
+            <div class="col-sm-3">
+                <input type="email" placeholder="Correo Electronico" class="form-control" required>
+                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+            </div>
+            <div class="col">
+                <input type="tel" placeholder="Telefono" class="form-control" required>
+                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+            </div>
+            <div class="col-sm-4">
+                <input type="text" placeholder="Dirección" class="form-control" required>
+                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+            </div>
+            <div class="col-sm-2">
+                <input type="text" placeholder="Barrio" class="form-control" required>
+                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+            </div>
+            <div class="col-sm">
+            <select name="localidad" id="localidad" class="form-select" required>
+                <option value="0">Seleccione</option>
+                <option value="1">Chapinero</option>
+                <option value="2">Usaquen</option>
+                <option value="3">Usme</option>
+                <option value="4">Ciudad Bolivar</option>
+                <option value="5">Puente Aranda</option>
+                <option value="6">Rafael Uribe Uribe</option>
+                <option value="7">San Cristobal</option>
+                <option value="8">Suba</option>
+                <option value="9">SumaPaz</option>
+                <option value="10">Teusaquillo</option>
+                <option value="11">Tunjuelito</option>
+                <option value="12">Barrios Unidos</option>
+                <option value="13">Antonio Nariño</option>
+                <option value="14">Bosa</option>
+                <option value="15">Candelaria</option>
+                <option value="16">Engativa</option>
+                <option value="17">OTRO</option>
+            </select>
+            </div>
+        </div>
+
+        <!-- fila 4 -->
+        <DIV class="entrega">
+        <textarea name="ENTREGA" id="212" cols="60" rows="5" placeholder="MOTIVO DEL CAMBIO" class="form-control" required></textarea>
+        <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+    </DIV>
+
+
+        <!-- 5 FILA -->
+        <div class="row mb-3">
+            <div class="row mb-1">     
+            </div>
+            <label for="Ley">Ley 1581 de 2012: Reconoce y protege el derecho que tienen todas las personas a conocer, 
+                actualizar y rectificar las informaciones que se hayan recogido sobre ellas en bases de datos o 
+                archivos que sean susceptibles de tratamiento por entidades de naturaleza pública o privada.
+                Empresa Responsable - Color In -
+            </label>
+            <input type="checkbox" class="form-chek-input" required>
+        </div>
+
+       
+
+
+
+
+
+
+            <!-- 6 fila -->
+            <div class="row mb-3">
+                <div class="col d-grid gap-2 d-sm-grid">
+                    <input type="submit" class="btn btn-dark d-sm-block" value="Realizar Cambio">
+    
+                </div>
+    
+    
+                <div class="col d-grid gap-2 d-sm-grid">
+                    <input type="reset" class="btn btn-dark d-sm-block" value="Cancelar Cambio">
+                </div>
+
+
+                <div class="row col-sm-5">
+                    <div class="col d-grid gap-2 d-sm-grid ">
+                        <a href="../Domicilios/Seleccione.html" class="btn btn-dark d-sm-block">Volver </a>
+        
+                    </div>
+    
+
+
+        </form>
+      
+
+
+
+
+    </div>
+    
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script>
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+    
+    </script>
+
+
+
+
+
+
+
+
+        </body>
+
+
+
+
+    </head>
+    
+    </html>

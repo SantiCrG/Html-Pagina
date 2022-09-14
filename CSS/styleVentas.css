@@ -1,0 +1,53 @@
+.header{
+     background: #818181;
+}
+
+.header img{
+    width: 10%;
+}
+
+ul li{
+    list-style: none;
+}
+
+.navColor {
+    background-color:#a8a5a183;
+    padding-left: 10px;
+}
+
+.navColor h4{
+    text-align: center;
+    padding-top: 1%;
+}
+
+nav ul i{
+    padding-right: 1.5%;
+}
+
+.rol img{
+    width: 35%;
+    border-radius: 50%;
+    border: 4px solid black;
+    
+}
+
+.rol{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.rol h4{
+    font-size: 1.2vw;
+    font-weight: bold;
+
+}
+
+.rol h5{
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.header a{
+    color: black;
+}

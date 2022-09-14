@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INGRESO</title>
+    <link rel="shorcurt icon" href="../../IMG/logo FINAL.jpeg">
+    <link rel="stylesheet" href="../../CSS/styleBootstrap.css">
+    <link rel="stylesheet" href="../../CSS/STYLES.bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/STYLES.CSS">
+    <link rel="stylesheet" href="../../fuentes/css/all.min.css">
+</head>
+
+<body>
+    <div class="container color8 mt-5 pt-5 pb-2">
+        <form action="Ventas/dashboardVentasBienvenida.html" class="needs-validation" novalidate>
+        <div class="row">
+
+            <div class="titulo">
+                <h1>COLOR IN</h1>
+            </div>
+            <div class="col-sm-push-3 mt-2">
+                <input type="email" placeholder="Correo Electronico" class="form-control" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+            </div>
+            <div class="col-sm-push-6 mt-2">
+                <input type="password" placeholder="Confirme su contraseña" class="form-control" required>
+            </div>
+            <div class="col-3 container-fluid width d-grid gap-2 d-sm-grid mb-2 mt-2">
+                <input type="submit" class="btn btn-dark d-sm-block" value="Ingresar">
+            </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="../COLOR-IN/JS/bootstrap.bundle.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+  
+
+</body>
+
+</html>

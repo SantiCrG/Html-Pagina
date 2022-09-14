@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shorcurt icon" href="../../IMG/logo FINAL.png">
+        <link rel="stylesheet" href="../../CSS/styleBootstrap.css">
+        <link rel="stylesheet" href="../../CSS/STYLES.bootstrap.min.css">
+        <link rel="stylesheet" href="../../CSS/STYLES.CSS">
+        <link rel="stylesheet" href="../../CSS/styleVentas.css">
+        <link rel="stylesheet" href="../../fuentes/css/all.min.css">
+        <title>REGISTRO</title>
+    </head>
+    
+    <body>
+        <!-- FILA 1 -->
+    
+        <div class="container-fluid color11">
+            <div class="row">
+                <header class="col header d-flex justify-content-between align-items-center">
+                    <img src="../../IMG/logo FINAL (1).png" alt="Imagen Logo">
+                    <a href="../../PAGINA_PRINCIPAL.HTML" class="nav-link"><i class="fa-solid fa-cog fa-spin"></i>Salir</a>
+                </header>
+            </div>
+            <!-- FILA 2 -->
+    
+            <div class="row">
+                <!-- 1 COLUMNA: barra de navegacion -->
+                <nav class="col-2 navColor d-block">
+                    <!-- ROL -->
+                    <div class="rol">
+                        <img src="../../IMG/descarga.jpg" alt="">
+                        <h4>Sebastian Tafur </h4>
+                        <h5>ADMIN</h5>
+                    </div>
+
+                    <h4>Usuarios</h4>
+                    <ul class="navbar-nav">
+                        <!-- Organiza los elementos hacia la izquierda -->
+                        <li><a href="../../INVENTARIO/HTML/ADMINISTRADOR.html" class="text-light nav-link"><i
+                                    class="fa-solid fa-cash-register"></i>Registrar Administrador</a></li>
+                        <li><a href="../../INVENTARIO/HTML/CLIENTE.HTML" class="text-light nav-link"><i
+                                    class="fa-solid fa-cash-register"></i>Registrar Cliente</a></li>
+                        <li><a href="../../INVENTARIO/HTML/TRABAJADOR.HTML" class="text-light nav-link"><i
+                                    class="fa-solid fa-flag"></i>Registrar Trabajador</a></li>
+                    </ul>
+    
+                    <h4>Inventario</h4>
+                    <ul class="navbar-nav">
+                        <!-- Organiza los elementos hacia la izquierda -->
+                        <li><a href="../../INVENTARIO/HTML/PRODUCTOS.HTML" class="text-light nav-link"><i
+                                    class="fa-solid fa-cash-register"></i>Registrar Producto</a></li>
+                        <li><a href="../../INVENTARIO/HTML/SERVICIOS.HTML" class="text-light nav-link"><i
+                                    class="fa-solid fa-flag"></i>Registrar Servicio</a></li>
+                    </ul>
+    
+                    <h4>Ventas</h4>
+                    <ul class="navbar-nav">
+                        <!-- REGISTRAR -->
+                        <li><a href="../../Ventas/dashboardVentasRegistrar.html" class="text-light nav-link"><i
+                                    class="fa-solid fa-cash-register"></i>Registrar Venta</a></li>
+                        <!-- ELIMINAR -->
+                        <li><a href="../../Ventas/dashboardVentasEliminar.html" class="text-light nav-link"><i
+                                    class="fa-solid fa-trash-can"></i>Eliminar Venta</a></li>
+                        <!-- BUSCAR -->
+                        <li><a href="../../Ventas/dashboardVentasBuscar.html" class="text-light nav-link"><i
+                                    class="fa-solid fa-magnifying-glass-dollar"></i>Buscar Venta</a></li>
+                        <!-- ACTUALIZAR -->
+                        <li><a href="../../Ventas/dashboardVentasHistorial.html" class="text-light nav-link"><i class="fa-solid fa-chart-line"></i>Historial Ventas</a></li>
+                    </ul>
+    
+                    <h4>Domicilios</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="../../Domicilios/DatosActualiza.html" class="text-light nav-link"><i
+                            class="fa-solid fa-location-pin"></i>Actualizaciones Domicilios</a></li>
+                            <li><a href="../../Domicilios/EstadoDomi.html" class="text-light nav-link"><i
+                            class="fa-solid fa-user-astronaut"></i>Estado del Domicilio</a></li>
+                            <li><a href="../../Domicilios/DATOSDOMI.html" class="text-light nav-link"><i
+                            class="fa-solid fa-user-astronaut"></i>Registros Domicilios</a></li>
+                            <li><a href="../../Domicilios/REPORTE.html" class="text-light nav-link"><i
+                            class="fa-solid fa-user-astronaut"></i>Enviar Reporte</a></li>
+                    </ul>
+                    <h4><a href="../../PQRS/PQRS_ADMINISTRADOR.HTML">PQRS</a></h4>
+                </nav>
+
+            <!-- 2 COLUMNA : contenido -->
+            <main class="col-10">
+                <div class="container-fluid color8 pt-5 pb-2">
+                    <form action="" class="needs-validation" novalidate>
+                        <div class="titulo">
+                            REGISTRO ADMINISTRADOR
+                        </div>
+                        <!-- 1 fila -->
+                        <div class="row justify-content-between mb-3">
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Nombres" required maxlength="25"
+                                    minlength="10">
+                                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Apellidos" required maxlength="25"
+                                    minlength="10">
+                                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+                            </div>
+                            <div class="col-sm-6">
+                                <select name="tipo de identificacion" id="tipo de identificacion" class="form-select">
+                                    <option value="1">CEDULA DE CIUDADANIA</option>
+                                    <option value="2">TARJETA DE IDENTIDAD</option>
+                                    <option value="3">REGISTRO CIVIL</option>
+                                    <option value="4">TARJETA DE EXTRANJERIA</option>
+                                    <option value="5">CEDULA DE EXTRANJERIA</option>
+                                    <option value="6">NIT</option>
+                                    <option value="7">PASAPORTE</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- 2 fila -->
+                        <div class="row mb-3 justify-content-between">
+                            <div class="col-sm-6">
+                                <input type="from-control" placeholder="Numero De Identificacion" required min="6"
+                                    max="10000000000" required step="0.1" class="form-control">
+                                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" placeholder="Lugar de Expercicion" required class="form-control">
+                                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="date" class="form-control" min="1930-01-01" max="2002-01-01"  required>
+                                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+                            </div>
+                        </div>
+                        <!-- 3 fila -->
+                        <div class="row mb-3 justify-content-between">
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" placeholder="Lugar de nacimiento" required> 
+                                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="date" class="form-control" min="1930-01-01" max="2002-01-01" required>
+                                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+                            </div>
+                            <div class="col-sm">
+                                <select name="localidad" id="localidad" class="form-select"  required>
+                                    <option value="0">Departamento</option>
+                                    <option value="1">La Guajira</option>
+                                    <option value="2">Cesar</option>
+                                    <option value="3">Magdalena</option>
+                                    <option value="4">Boliviar</option>
+                                    <option value="5">Sucre</option>
+                                    <option value="6">Atlantico</option>
+                                    <option value="7">Norte de Santander</option>
+                                    <option value="8">Cordoba</option>
+                                    <option value="9">Antioquia</option>
+                                    <option value="10">Santander</option>
+                                    <option value="11">Arauca</option>
+                                    <option value="12">Boyaca</option>
+                                    <option value="13">Casanare</option>
+                                    <option value="14">Vichada</option>
+                                    <option value="15">Meta</option>
+                                    <option value="16">Tolima</option>
+                                    <option value="17">Cundinamarca</option>
+                                    <option value="18">Choco</option>
+                                    <option value="19">Caldas</option>
+                                    <option value="20">Risaralda</option>
+                                    <option value="21">Quindio</option>
+                                    <option value="22">Valle del Cauca</option>
+                                    <option value="23">Huila</option>
+                                    <option value="24">Cauca</option>
+                                    <option value="25">Nariño</option>
+                                    <option value="26">Putumayo</option>
+                                    <option value="27">Caqueta</option>
+                                    <option value="28">Guaviare</option>
+                                    <option value="29">Vaupes</option>
+                                    <option value="30">Amazonas</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="tel" placeholder="Telefono" min="6" max="10000000000" class="form-select"
+                                    required>
+                                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+                            </div>
+
+                        </div>
+                        <!-- 4 fila -->
+                        <div class="row mb-3 justify-content-between">
+                            <div class="col-sm-3">
+                                <input type="text" placeholder="Direccion" required class="form-control"  required>
+                                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="text" placeholder="Barrio" class="form-control"  required>
+                                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+                            </div>
+                            <div class="col-sm">
+                                <select name="localidad" id="localidad" class="form-select"  required>
+                                    <option value="0">Seleccione Localidad</option>
+                                    <option value="1">Usaquen</option>
+                                    <option value="2">Chapinero</option>
+                                    <option value="3">Santa Fe</option>
+                                    <option value="0">Usme</option>
+                                    <option value="1">Tunjuelito</option>
+                                    <option value="2">Bosa</option>
+                                    <option value="3">Kennedy</option>
+                                </select>
+                            </div>
+                            <!-- 5 fila -->
+                            <div class="row mb-3 justify-content-between">
+                                <div class="col-sm-3">
+                                    <input type="checkbox" name="sexo" id="sexo"> Femenino
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="checkbox" name="sexo1" id="sexo1"> Masculino
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="checkbox" name="sexo2" id="sexo2"> Otros
+                                </div>
+                            </div>
+                            <!-- 6 fila -->
+                            <div class="row mb-3 justify-content-between" required>
+                                <div class="col-sm-3">
+                                    <input type="radio" name="estado civil" id="estado civil"> Soltero/a/e
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="radio" name="estado civil1" id="estado civil1"> Casado/a/e
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="radio" name="estado civil2" id="estado civil2"> Divorciado/a/e
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="radio" name="estado civil3" id="estado civil3"> Viudo/a/e
+                                </div>
+                            </div>
+                            <!-- 7 fila -->
+                            <div class="row mb-3 justify-content-between">
+                                <div class="col-sm-6">
+                                    <input type="email" name="email" id="email" required placeholder="Correo"
+                                        class="form-control">
+                                    <div class="valid-feedback">Perfecto!</div>
+                                    <div class="invalid-feedback">Completa La Celda.</div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="password" name="password" id="password" required
+                                        placeholder="contraseña" min="8" max="20" class="form-control">
+                                    <div class="valid-feedback">Perfecto!</div>
+                                    <div class="invalid-feedback">Completa La Celda.</div>
+                                </div>
+                            </div>
+                            <!-- 8 fila -->
+                            <div class="row mb-3 justify-contenct-between">
+                                <div class="col-sm-4">
+                                    <input type="password" placeholder="Confirme su contraseña" class="form-control"
+                                        required>
+                                    <div class="valid-feedback">Perfecto!</div>
+                                    <div class="invalid-feedback">Completa La Celda.</div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="date" class="form-control"  required>
+                                    <div class="valid-feedback">Perfecto!</div>
+                                    <div class="invalid-feedback">Completa La Celda.</div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="text" name="lugar nacimiento" id="lugar nacimiento"
+                                        placeholder="Lugar De Nacimiento" minlength="5" maxlength="20"
+                                        class="form-select" required>
+                                    <div class="valid-feedback">Perfecto!</div>
+                                    <div class="invalid-feedback">Completa La Celda.</div>
+                                </div>
+                            </div>
+                            <!-- 9 fila -->
+                            <div class="row mb-3">
+                                <div class="col d-grid gap-2 d-sm-grid">
+                                    <input type="submit" class="btn btn-dark d-sm-block" value="GUARDAR">
+                                </div>
+                                <div class="col d-grid gap-2 d-sm-grid">
+                                    <input type="reset" class="btn btn-dark d-sm-block" value="CANCELAR">
+                                </div>
+                            </div>
+                            <div class="col d-grid gap-2 d-sm-grid">
+                                <a href="../../PAGINA_PRINCIPAL.HTML" class="btn btn-dark d-sm-block">SALIR</a>
+                            </div>
+                    </form>
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- data tables java  script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

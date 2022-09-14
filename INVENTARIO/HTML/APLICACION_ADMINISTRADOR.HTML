@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shorcurt icon" href="../../IMG/logo FINAL.png">
+        <link rel="stylesheet" href="../../CSS/styleBootstrap.css">
+        <link rel="stylesheet" href="../../CSS/STYLES.bootstrap.min.css">
+        <link rel="stylesheet" href="../../CSS/STYLES.CSS">
+        <link rel="stylesheet" href="../../CSS/styleVentas.css">
+        <link rel="stylesheet" href="../../fuentes/css/all.min.css">
+        <title>REGISTRO</title>
+    </head>
+    
+    <body>
+        <!-- FILA 1 -->
+    
+        <div class="container-fluid color11">
+            <div class="row">
+                <header class="col header d-flex justify-content-between align-items-center">
+                    <img src="../../IMG/logo FINAL (1).png" alt="Imagen Logo">
+                    <a href="../../PAGINA_PRINCIPAL.HTML" class="nav-link"><i class="fa-solid fa-cog fa-spin"></i>Salir</a>
+                </header>
+            </div>
+            <!-- FILA 2 -->
+    
+            <div class="row">
+                <!-- 1 COLUMNA: barra de navegacion -->
+                <nav class="col-2 navColor d-block">
+                    <!-- ROL -->
+                    <div class="rol">
+                        <img src="../../IMG/descarga.jpg" alt="">
+                        <h4>Sebastian Tafur </h4>
+                        <h5>ADMIN</h5>
+                    </div>
+
+                    <h4>Usuarios</h4>
+                    <ul class="navbar-nav">
+                        <!-- Organiza los elementos hacia la izquierda -->
+                        <li><a href="../../INVENTARIO/HTML/ADMINISTRADOR.html" class="text-light nav-link"><i
+                                    class="fa-solid fa-cash-register"></i>Registrar Administrador</a></li>
+                        <li><a href="../../INVENTARIO/HTML/CLIENTE.HTML" class="text-light nav-link"><i
+                                    class="fa-solid fa-cash-register"></i>Registrar Cliente</a></li>
+                        <li><a href="../../INVENTARIO/HTML/TRABAJADOR.HTML" class="text-light nav-link"><i
+                                    class="fa-solid fa-flag"></i>Registrar Trabajador</a></li>
+                    </ul>
+    
+                    <h4>Inventario</h4>
+                    <ul class="navbar-nav">
+                        <!-- Organiza los elementos hacia la izquierda -->
+                        <li><a href="../../INVENTARIO/HTML/PRODUCTOS.HTML" class="text-light nav-link"><i
+                                    class="fa-solid fa-cash-register"></i>Registrar Producto</a></li>
+                        <li><a href="../../INVENTARIO/HTML/SERVICIOS.HTML" class="text-light nav-link"><i
+                                    class="fa-solid fa-flag"></i>Registrar Servicio</a></li>
+                    </ul>
+    
+                    <h4>Ventas</h4>
+                    <ul class="navbar-nav">
+                        <!-- REGISTRAR -->
+                        <li><a href="../../Ventas/dashboardVentasRegistrar.html" class="text-light nav-link"><i
+                                    class="fa-solid fa-cash-register"></i>Registrar Venta</a></li>
+                        <!-- ELIMINAR -->
+                        <li><a href="../../Ventas/dashboardVentasEliminar.html" class="text-light nav-link"><i
+                                    class="fa-solid fa-trash-can"></i>Eliminar Venta</a></li>
+                        <!-- BUSCAR -->
+                        <li><a href="../../Ventas/dashboardVentasBuscar.html" class="text-light nav-link"><i
+                                    class="fa-solid fa-magnifying-glass-dollar"></i>Buscar Venta</a></li>
+                        <!-- ACTUALIZAR -->
+                        <li><a href="../../Ventas/dashboardVentasHistorial.html" class="text-light nav-link"><i class="fa-solid fa-chart-line"></i>Historial Ventas</a></li>
+                    </ul>
+    
+                    <h4>Domicilios</h4>
+                    <ul class="navbar-nav">
+                        <li><a href="../../Domicilios/DatosActualiza.html" class="text-light nav-link"><i
+                            class="fa-solid fa-location-pin"></i>Actualizaciones Domicilios</a></li>
+                            <li><a href="../../Domicilios/EstadoDomi.html" class="text-light nav-link"><i
+                            class="fa-solid fa-user-astronaut"></i>Estado del Domicilio</a></li>
+                            <li><a href="../../Domicilios/DATOSDOMI.html" class="text-light nav-link"><i
+                            class="fa-solid fa-user-astronaut"></i>Registros Domicilios</a></li>
+                            <li><a href="../../Domicilios/REPORTE.html" class="text-light nav-link"><i
+                            class="fa-solid fa-user-astronaut"></i>Enviar Reporte</a></li>
+                    </ul>
+                    <h4><a href="../../PQRS/PQRS_ADMINISTRADOR.HTML">PQRS</a></h4>
+                </nav>
+
+            <!-- 2 COLUMNA : contenido -->
+            <main class="col-10">
+                <div class="container-fluid color8 pt-5 pb-2">
+                    <form action="" class="needs-validation" novalidate>
+                        <div class="titulo">
+                            REGISTRO APLICACION
+                        </div>
+            <!-- 1 fila -->
+            <div class="row justify-content-between mb-3">
+                <div class="col-sm-4">
+                    <input type="text" required placeholder="Marca" minlength="5" maxlength="20" class="form-control">
+                    <div class="valid-feedback">Perfecto!</div>
+                    <div class="invalid-feedback">Completa La Celda.</div>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" required placeholder="Modelo" minlength="10" maxlength="30" size="30" class="form-control" >
+                    <div class="valid-feedback">Perfecto!</div>
+                    <div class="invalid-feedback">Completa La Celda.</div>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" required placeholder="Matricula" class="form-control">
+                    <div class="valid-feedback">Perfecto!</div>
+                    <div class="invalid-feedback">Completa La Celda.</div>
+                 </div>
+            </div>
+            <!-- 2 fila -->
+            <div class="row justify-content-between mb-3">
+                <div class="col-sm-3">
+                    <h6>Color Del vehiculo</h6>
+                    <input type="color" name="colorvehiculo" id="colorvehiculo" class="form-select">
+                    <div class="valid-feedback">Perfecto!</div>
+                    <div class="invalid-feedback">Completa La Celda.</div>
+                </div>
+                <div class="col-sm-6">
+                    <select name="" id="" class="form-select">
+                            <option value="0">Tornasol</option>
+                            <option value="1">Mate</option>
+                            <option value="2">Brillante</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <h6>Color De Cambio</h6>
+                    <input type="color" name="colorcambio" id="colorcambio" class="form-select">
+                    <div class="valid-feedback">Perfecto!</div>
+                    <div class="invalid-feedback">Completa La Celda.</div>
+                </div>
+            </div>
+            <!-- 3 fila -->
+            <div class="row mb-3">
+                <div class="col d-grid gap-2 d-sm-grid">
+                    <input type="submit" class="btn btn-dark d-sm-block" value="REGISTRAR VEHICULO">
+                </div>
+                <div class="col d-grid gap-2 d-sm-grid">
+                    <input type="reset" class="btn btn-dark d-sm-block" value="CANCELAR">
+                </div>
+            </div>
+            <div class="col d-grid gap-2 d-sm-grid">
+                <a href="../../PAGINA_PRINCIPAL.HTML" class="btn btn-dark d-sm-block">SALIR</a>
+            </div>
+
+
+
+        </form>
+    </div>
+        <!-- CODIGO PARA VALIDAR FORMULARIOS -->
+        <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+              'use strict'
+            
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.querySelectorAll('.needs-validation')
+            
+              // Loop over them and prevent submission
+              Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                  form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                      event.preventDefault()
+                      event.stopPropagation()
+                    }
+            
+                    form.classList.add('was-validated')
+                  }, false)
+                })
+            })()</script>
+    <script src="../../JS/bootstrap.bundle.min.js"></script>  
+</body>
+</html>

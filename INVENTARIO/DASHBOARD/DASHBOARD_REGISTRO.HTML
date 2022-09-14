@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcurt icon" href="../../IMG/logo FINAL.jpeg">
+    <link rel="stylesheet" href="../../CSS/all.min.css">
+    <link rel="stylesheet" href="../../CSS/styleBootstrap.css">
+    <link rel="stylesheet" href="../../CSS/STYLES.bootstrap.min.css">
+    <link rel="stylesheet" href="../../CSS/STYLES.CSS">
+    <title>REGISTRO</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+    <!-- 1 fila -->
+    <div class="row">
+        <header class="col header d-flex justify-contenct-between align-items-center">
+            <img src="../../IMG/logo FINAL.jpeg" alt="">
+            <div class="rol">
+                <img src="../../IMG/descarga.jpg" alt="">
+                <h4>HOLMAN ALFONSO</h4>
+                <H5>ADMINISTRADOR</H5>
+                <a href="../../PAGINA_PRINCIPAL.HTML" class="nav-link">SALIR</a>
+            </div>
+        <div>
+        </header>
+    </div>
+    <!-- 2 fila -->
+
+    <div class="row">
+        <nav class="col header">
+                <!-- BOTONES -->
+                <div class="row mb-3">
+                    <div class="col d-grid gap-2 d-sm-grid">
+                        <a href="../HTML/ADMINISTRADOR.HTML" class="btn btn-dark d-sm-block">ADMINISTRADOR</a>
+                    </div>
+                    <div class="col d-grid gap-2 d-sm-grid">
+                        <a href="../HTML/TRABAJADOR.HTML" class="btn btn-dark d-sm-block">TRABAJADOR</a>
+                    </div>
+                    <div class="col d-grid gap-2 d-sm-grid">
+                        <a href="../HTML/CLIENTE.HTML" class="btn btn-dark d-sm-block">CLIENTE</a>
+                    </div>
+                </div>
+        </nav>
+    </div>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <script src="../../JS/bootstrap.bundle.min.js"></script>
+
+
+
+    </div>
+</body>
+</html>

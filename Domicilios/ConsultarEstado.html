@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>CONSULTAR EL ESTADO</title>
+</head>
+<body style="background-color: rgb(32, 31, 31);">
+        <!-- FILA 1 -->
+    <div class="container-fluid color8 pt-5 pb-2">
+            <form action="../Domicilios/RealizadoExito.html" class="needs-validation" novalidate>
+<body>
+    <div class="container-fluid color8 pt-5 pb-2">
+        <div class="titulo">
+            <p>INGRESE LA INFORMACION PARA CONSULTAR EL ESTADO</p>
+        </div>
+        <form action="" class="needs-validation" novalidate >
+        <!-- 1 fila -->
+        <div class="row justify-content-between mb-3">
+            <div class="titulo1">
+                <p>INGRESE SU USUARIO</p>
+            </div>
+            <div class="col-sm-5" novalidate>
+                <input type="text" class="form-control" placeholder="Nombre De Usuario" required maxlength="" minlength="8">
+                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+            </div>
+ 
+        </div>
+        
+
+        <!-- 2 fila -->
+        
+      
+
+<!-- fila 3 -->
+        <div class="row mb-3">
+            <div class="titulo2">
+                <p>INGRESE EL ID DEL PRODUCTO QUE DESEA CONSULTAR</p>
+            </div>
+            <div class="col-sm-4 mb-3">
+                <input type="text" placeholder="ID DEL PRODUCTO A CONSULTAR" class="form-control" required>
+                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+            </div>
+            
+         <div class="row mb-3">
+            <div class="titulo">SU ESTADO ES</div>
+            <div class="col-sm">
+                <input type="text" class="form-control" required>
+                <div class="valid-feedback">Perfecto!</div>
+                                <div class="invalid-feedback">Completa La Celda.</div>
+
+
+            </div>
+            </div>
+
+    
+
+
+            <!-- 4 fila -->
+            <div class="row mb-3">
+                <div class="col d-grid gap-2 d-sm-grid">
+                    <input type="submit" class="btn btn-dark d-sm-block" value="CONSULTAR"  >
+    
+                </div>
+    
+           
+                <div class="row col-sm-5">
+                    <div class="col d-grid gap-2 d-sm-grid ">
+                        <a href="../Domicilios/Seleccione.html" class="btn btn-dark d-sm-block">Volver </a>
+        
+                    </div>
+            </div>
+        </form>
+        
+      
+
+    </div>
+<script src="js/bootstrap.bundle.min.js">
+    
+</script>
+
+
+<!-- validacion codigo -->
+<script>
+
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+</script>
+
+
+</body>
+</html>
+
